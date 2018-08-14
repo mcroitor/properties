@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>property.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>property.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f1"
+                     displayName="Property Test"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>bad.properties</itemPath>
+        <itemPath>tests/propertytest.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+    <itemPath>../README.md</itemPath>
+    <itemPath>config.properties</itemPath>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+      </compileType>
+      <item path="../README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bad.properties" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.properties" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <item path="property.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="property.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/propertytest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="dynamic-release" type="2">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/properties.${CND_DLIB_EXT}</output>
+        </linkerTool>
+      </compileType>
+      <item path="../README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bad.properties" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.properties" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <item path="property.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="property.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/propertytest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="static-release" type="3">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <standard>11</standard>
+        </ccTool>
+        <asmTool>
+          <developmentMode>6</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="../README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bad.properties" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.properties" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <item path="property.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="property.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/propertytest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="dynamic-release-x64" type="2">
+      <toolsSet>
+        <compilerSet>MinGW64|MinGW</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+        <linkerTool>
+          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/properties.${CND_DLIB_EXT}</output>
+        </linkerTool>
+      </compileType>
+      <item path="../README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bad.properties" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.properties" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+        </linkerTool>
+      </folder>
+      <item path="property.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="property.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/propertytest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="static-release-x64" type="3">
+      <toolsSet>
+        <compilerSet>MinGW64|MinGW</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <developmentMode>6</developmentMode>
+          <standard>11</standard>
+        </ccTool>
+        <asmTool>
+          <developmentMode>6</developmentMode>
+        </asmTool>
+        <archiverTool>
+        </archiverTool>
+      </compileType>
+      <item path="../README.md" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="bad.properties" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.properties" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <item path="property.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="property.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/propertytest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
