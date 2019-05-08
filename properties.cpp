@@ -1,4 +1,4 @@
-#include "property.h"
+#include "properties.h"
 #include <fstream>
 #include <string>
 
@@ -84,7 +84,7 @@ namespace mc {
      * @param key
      * @return 
      */
-    bool properties::has_property(std::string key) const {
+    bool properties::has_property(const std::string& key) const {
         return _properties.count(key) == 1;
     }
 

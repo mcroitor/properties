@@ -21,7 +21,7 @@ FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=MSYS32-Windows
+CND_PLATFORM=MinGW-Windows
 CND_DLIB_EXT=dll
 CND_CONF=Debug
 CND_DISTDIR=dist
@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/property.o
+	${OBJECTDIR}/properties.o
 
 # Test Directory
 TESTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}/tests
@@ -66,16 +66,16 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libProperties.${CND_DLIB_EXT}
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libproperties.${CND_DLIB_EXT}
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libProperties.${CND_DLIB_EXT}: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libproperties.${CND_DLIB_EXT}: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libProperties.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/libproperties.${CND_DLIB_EXT} ${OBJECTFILES} ${LDLIBSOPTIONS} -shared
 
-${OBJECTDIR}/property.o: property.cpp
+${OBJECTDIR}/properties.o: properties.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/property.o property.cpp
+	$(COMPILE.cc) -g  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/properties.o properties.cpp
 
 # Subprojects
 .build-subprojects:
@@ -95,17 +95,17 @@ ${TESTDIR}/tests/propertytest.o: tests/propertytest.cpp
 	$(COMPILE.cc) -g -I. -MMD -MP -MF "$@.d" -o ${TESTDIR}/tests/propertytest.o tests/propertytest.cpp
 
 
-${OBJECTDIR}/property_nomain.o: ${OBJECTDIR}/property.o property.cpp 
+${OBJECTDIR}/properties_nomain.o: ${OBJECTDIR}/properties.o properties.cpp 
 	${MKDIR} -p ${OBJECTDIR}
-	@NMOUTPUT=`${NM} ${OBJECTDIR}/property.o`; \
+	@NMOUTPUT=`${NM} ${OBJECTDIR}/properties.o`; \
 	if (echo "$$NMOUTPUT" | ${GREP} '|main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T main$$') || \
 	   (echo "$$NMOUTPUT" | ${GREP} 'T _main$$'); \
 	then  \
 	    ${RM} "$@.d";\
-	    $(COMPILE.cc) -g  -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/property_nomain.o property.cpp;\
+	    $(COMPILE.cc) -g  -Dmain=__nomain -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/properties_nomain.o properties.cpp;\
 	else  \
-	    ${CP} ${OBJECTDIR}/property.o ${OBJECTDIR}/property_nomain.o;\
+	    ${CP} ${OBJECTDIR}/properties.o ${OBJECTDIR}/properties_nomain.o;\
 	fi
 
 # Run Test Targets
