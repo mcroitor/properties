@@ -13,7 +13,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>property.cpp</itemPath>
+      <itemPath>group_properties.cpp</itemPath>
+      <itemPath>properties.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -67,7 +68,9 @@
           <output>${TESTDIR}/TestFiles/f1</output>
         </linkerTool>
       </folder>
-      <item path="property.cpp" ex="false" tool="1" flavor2="0">
+      <item path="group_properties.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="properties.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="property.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -118,7 +121,9 @@
           <output>${TESTDIR}/TestFiles/f1</output>
         </linkerTool>
       </folder>
-      <item path="property.cpp" ex="false" tool="1" flavor2="0">
+      <item path="group_properties.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="properties.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="property.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -168,7 +173,9 @@
           </linkerLibItems>
         </linkerTool>
       </folder>
-      <item path="property.cpp" ex="false" tool="1" flavor2="0">
+      <item path="group_properties.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="properties.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="property.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -219,7 +226,9 @@
           <output>${TESTDIR}/TestFiles/f1</output>
         </linkerTool>
       </folder>
-      <item path="property.cpp" ex="false" tool="1" flavor2="0">
+      <item path="group_properties.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="properties.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="property.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -269,7 +278,9 @@
           </linkerLibItems>
         </linkerTool>
       </folder>
-      <item path="property.cpp" ex="false" tool="1" flavor2="0">
+      <item path="group_properties.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="properties.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="property.h" ex="false" tool="3" flavor2="0">
       </item>

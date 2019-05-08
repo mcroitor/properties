@@ -1,0 +1,26 @@
+CC = gcc
+AR = ar
+CXXFLAGS = -O2 -std=c++14
+CFLAGS = -O2
+ARFLAGS = rcs
+LDFLAGS = -lstdc++
+OUT = libproperty.a
+OBJDIR = obj
+BUILDDIR = build
+
+all: directories $(OUT)
+
+directories: $(OBJDIR) $(BUILDDIR)
+
+$(OBJDIR):
+	mkdir -p $(OBJDIR)
+
+$(BUILDDIR):
+	mkdir -p $(BUILDDIR)
+
+$(OUT):  property.o
+	$(AR) $(ARFLAGS) $(BUILDDIR)/$(OUT) $(OBJDIR)/property.o
+
+
+property.o: property.cpp
+	$(CC) -c property.cpp $(CXXFLAGS) -o $(OBJDIR)/property.o 
