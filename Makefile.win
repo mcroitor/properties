@@ -18,9 +18,11 @@ $(OBJDIR):
 $(BUILDDIR):
 	mkdir -p $(BUILDDIR)
 
-$(OUT):  property.o
-	$(AR) $(ARFLAGS) $(BUILDDIR)/$(OUT) $(OBJDIR)/property.o
+$(OUT): properties.o group_properties.o
+	$(AR) $(ARFLAGS) $(BUILDDIR)/$(OUT) $(OBJDIR)/properties.o $(OBJDIR)/group_properties.o
 
+properties.o: properties.cpp
+	$(CC) -c properties.cpp $(CXXFLAGS) -o $(OBJDIR)/properties.o 
 
-property.o: property.cpp
-	$(CC) -c property.cpp $(CXXFLAGS) -o $(OBJDIR)/property.o 
+group_properties.o: group_properties.cpp
+	$(CC) -c group_properties.cpp $(CXXFLAGS) -o $(OBJDIR)/group_properties.o
