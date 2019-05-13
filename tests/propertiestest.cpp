@@ -78,7 +78,7 @@ void testSetProperty() {
 
     mc::properties property;
     //property.create(filename);
-    property.set_property(key, value);
+    property.add_property(key, value);
 
     if (property.has_property(key) == false) {
         std::cout << "%TEST_FAILED% time=0 testname=testSetProperty (propertytest) message=key '" << key << "' not exists" << std::endl;

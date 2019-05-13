@@ -37,7 +37,7 @@ class properties{
 public:
   properties(); // default constructor. associated implicitly with file 'default.properties'
   void load_properties(const std::string& filename); // load properties from file 'filename'. exceptions are not analyzed
-  bool has_property(std::string key) const; // check if property 'key' exists
+  bool has_property(const std::string& key) const; // check if property 'key' exists
   const std::string& operator[](const std::string& key) const; // get value of property 'key'
   const std::string& get_property(const std::string& key) const; // get value of property 'key'. pseudonim of operator []
   const std::string& filename() const; // returns name of associated property file

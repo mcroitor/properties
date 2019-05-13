@@ -22,7 +22,7 @@ namespace mc {
         // for adding new properties
         void save();
         void create(const std::string&);
-        bool set_property(std::string, std::string);
+        bool add_property(std::string, std::string);
     private:
 
     };
@@ -38,11 +38,14 @@ namespace mc {
         bool has_group(const std::string&) const;
         bool has_property(const std::string&, const std::string&) const;
         const properties& operator[](const std::string&) const;
+        properties& get_group(const std::string&);
         const properties& get_group(const std::string&) const;
         const std::string& get_property(const std::string&, const std::string&) const;
         const std::string& filename() const;
         const std::map<std::string, properties>& all_properties() const;
+        
         void save();
+        void add_group(const std::string&);
     };
 }
 

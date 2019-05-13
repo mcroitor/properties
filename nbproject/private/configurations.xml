@@ -7,11 +7,10 @@
       <df name="obj">
       </df>
       <df name="tests">
-        <in>propertytest.cpp</in>
+        <in>groupstest.cpp</in>
+        <in>propertiestest.cpp</in>
       </df>
-      <in>group_properties.cpp</in>
-      <in>properties.cpp</in>
-      <in>property.h</in>
+      <in>additional.cpp</in>
     </df>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
