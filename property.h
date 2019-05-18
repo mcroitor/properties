@@ -37,6 +37,7 @@ namespace mc {
         void load_properties(const std::string&);
         bool has_group(const std::string&) const;
         bool has_property(const std::string&, const std::string&) const;
+        properties& operator[](const std::string&);
         const properties& operator[](const std::string&) const;
         properties& get_group(const std::string&);
         const properties& get_group(const std::string&) const;
