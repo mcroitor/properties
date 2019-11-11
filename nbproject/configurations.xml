@@ -33,9 +33,13 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
-    <itemPath>../README.md</itemPath>
+    <itemPath>CMakeLists.txt</itemPath>
+    <itemPath>README.md</itemPath>
     <itemPath>config.properties</itemPath>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="2">
@@ -46,7 +50,9 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="../README.md" ex="false" tool="3" flavor2="0">
+      <item path="CMakeLists.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="bad.properties" ex="false" tool="3" flavor2="0">
       </item>
@@ -74,7 +80,7 @@
       <item path="tests/propertytest.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
-    <conf name="dynamic-release" type="2">
+    <conf name="dynamic-release" type="3">
       <toolsSet>
         <compilerSet>default</compilerSet>
         <dependencyChecking>true</dependencyChecking>
@@ -93,11 +99,12 @@
         <asmTool>
           <developmentMode>5</developmentMode>
         </asmTool>
-        <linkerTool>
-          <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/properties.${CND_DLIB_EXT}</output>
-        </linkerTool>
+        <archiverTool>
+        </archiverTool>
       </compileType>
-      <item path="../README.md" ex="false" tool="3" flavor2="0">
+      <item path="CMakeLists.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="bad.properties" ex="false" tool="3" flavor2="0">
       </item>
@@ -142,7 +149,9 @@
         <archiverTool>
         </archiverTool>
       </compileType>
-      <item path="../README.md" ex="false" tool="3" flavor2="0">
+      <item path="CMakeLists.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="bad.properties" ex="false" tool="3" flavor2="0">
       </item>
@@ -198,7 +207,9 @@
           <output>${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/properties.${CND_DLIB_EXT}</output>
         </linkerTool>
       </compileType>
-      <item path="../README.md" ex="false" tool="3" flavor2="0">
+      <item path="CMakeLists.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="bad.properties" ex="false" tool="3" flavor2="0">
       </item>
@@ -243,7 +254,9 @@
         <archiverTool>
         </archiverTool>
       </compileType>
-      <item path="../README.md" ex="false" tool="3" flavor2="0">
+      <item path="CMakeLists.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="README.md" ex="false" tool="3" flavor2="0">
       </item>
       <item path="bad.properties" ex="false" tool="3" flavor2="0">
       </item>

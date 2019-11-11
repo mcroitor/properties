@@ -17,11 +17,11 @@ CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/libproperties.dll.tar
 # dynamic-release configuration
 CND_PLATFORM_dynamic-release=MinGW-Windows
 CND_ARTIFACT_DIR_dynamic-release=dist/dynamic-release/MinGW-Windows
-CND_ARTIFACT_NAME_dynamic-release=properties.dll
-CND_ARTIFACT_PATH_dynamic-release=dist/dynamic-release/MinGW-Windows/properties.dll
+CND_ARTIFACT_NAME_dynamic-release=libproperties.a
+CND_ARTIFACT_PATH_dynamic-release=dist/dynamic-release/MinGW-Windows/libproperties.a
 CND_PACKAGE_DIR_dynamic-release=dist/dynamic-release/MinGW-Windows/package
-CND_PACKAGE_NAME_dynamic-release=libproperties.dll.tar
-CND_PACKAGE_PATH_dynamic-release=dist/dynamic-release/MinGW-Windows/package/libproperties.dll.tar
+CND_PACKAGE_NAME_dynamic-release=properties.tar
+CND_PACKAGE_PATH_dynamic-release=dist/dynamic-release/MinGW-Windows/package/properties.tar
 # static-release configuration
 CND_PLATFORM_static-release=MinGW-Windows
 CND_ARTIFACT_DIR_static-release=dist/static-release/MinGW-Windows

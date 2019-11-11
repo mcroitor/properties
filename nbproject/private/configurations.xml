@@ -58,7 +58,7 @@
         </environment>
       </runprofile>
     </conf>
-    <conf name="dynamic-release" type="2">
+    <conf name="dynamic-release" type="3">
       <toolsSet>
         <developmentServer>localhost</developmentServer>
         <platform>3</platform>

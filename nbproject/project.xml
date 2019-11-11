@@ -9,7 +9,9 @@
             <header-extensions>h</header-extensions>
             <sourceEncoding>UTF-8</sourceEncoding>
             <make-dep-projects/>
-            <sourceRootList/>
+            <sourceRootList>
+                <sourceRootElem>.</sourceRootElem>
+            </sourceRootList>
             <confList>
                 <confElem>
                     <name>Debug</name>
@@ -17,7 +19,7 @@
                 </confElem>
                 <confElem>
                     <name>dynamic-release</name>
-                    <type>2</type>
+                    <type>3</type>
                 </confElem>
                 <confElem>
                     <name>static-release</name>
