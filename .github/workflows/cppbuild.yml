@@ -16,3 +16,5 @@ jobs:
       run: make --makefile=Makefile.example
     - name: test app
       run: make --makefile=Makefile.example test
+    - name: build and run example
+      run: make --makefile=Makefile.example example

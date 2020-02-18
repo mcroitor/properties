@@ -22,6 +22,10 @@ test: $(OUT)
 	$(CC) $(OBJDIR)/propertiestest.o $(OBJDIR)/properties.o -o $(BUILDDIR)/propertiestest $(LDFLAGS)
 	$(BUILDDIR)/propertiestest
 
+example: $(OUT)
+	$(CC) examples/example01.cpp -o $(BUILDDIR)/example01 -L$(BUILDDIR) -lproperties -lstdc++
+	$(BUILDDIR)/example01 config.properties
+
 $(OBJDIR):
 	mkdir -p $(OBJDIR)
 
