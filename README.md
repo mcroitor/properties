@@ -53,6 +53,13 @@ make
 ```
 
 Sure, you can use any other CMake generator.
+
+Example of use is represented in [example folder](./example/). You can authomatically build this example by
+command
+```bash
+make example --makefile=Makefile.example
+```
+
 ## Interface of class Properties ##
 ```C++
 class properties{
