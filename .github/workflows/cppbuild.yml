@@ -13,6 +13,6 @@ jobs:
     - name: branch name
       run: echo running on branch ${GITHUB_REF##*/}
     - name: build app
-      run: make
+      run: make --makefile=Makefile.example
     - name: test app
-      run: make test
+      run: make --makefile=Makefile.example test
