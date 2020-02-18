@@ -1,6 +1,6 @@
 #include <cstdlib>
 #include <iostream>
-#include "properties.h"
+#include "../properties.h"
 
 /*
  * Simple C++ Test Suite
