@@ -1,0 +1,18 @@
+name: C++ build and test
+
+on: 
+  push
+
+jobs:
+  build_app:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: branch name
+      run: echo running on branch ${GITHUB_REF##*/}
+    - name: build app
+      run: make
+    - name: test app
+      run: make test
